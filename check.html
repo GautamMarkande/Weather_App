@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <div id="addbtn" style="border:2px solid red; cursor: pointer;">Add</div>
+    <script>
+     const container = document.querySelector(".container");
+       
+        const btn = document.getElementById("addbtn");
+        btn.addEventListener("click",()=>{
+            const para = document.createElement("p");
+            para.innerText = "hello bacho";
+            container.appendChild(para);
+        });
+
+    </script>
+</body>
+</html>
